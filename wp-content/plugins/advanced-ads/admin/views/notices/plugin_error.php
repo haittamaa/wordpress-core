@@ -1,1 +1,0 @@
-<div class="error advads-admin-notice message"><p><?php echo $text; ?><?php ?></p></div>
