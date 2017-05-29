@@ -1,0 +1,18 @@
+AddType text/cache-manifest .manifest
+
+<FilesMatch "\.(manifest)$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /wponenew/
+RewriteRule ^manifest.appcache$ cache.php [L]
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wponenew/index.php [L]
+</IfModule>
+# END WordPress
