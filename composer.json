@@ -1,5 +1,5 @@
 {
-    "name": "haittamaa/wordpress-core",
+    "name": "wpone/wordpress-core",
     "description": "WordPress is web software you can use to create a beautiful website or blog.",
     "keywords": ["wordpress", "blog", "cms"],
     "type": "wordpress-core",
